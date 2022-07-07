@@ -34,6 +34,7 @@ const Instructors = () => {
                 alt=""
               />
               <h6>{name}</h6>
+              
             </div>
           );
         })}
