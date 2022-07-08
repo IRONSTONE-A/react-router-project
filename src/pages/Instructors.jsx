@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Instructors = () => {
   const navigate = useNavigate();
@@ -7,7 +7,7 @@ const Instructors = () => {
   const [instructors, setInstructors] = useState([]);
 
   const getInstructors = () => {
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch('https://jsonplaceholder.typicode.com/users')
       .then((res) => res.json())
       .then((data) => setInstructors(data))
       .catch((err) => console.log(err));
@@ -26,15 +26,18 @@ const Instructors = () => {
             <div
               className="col-sm-12 col-md-6 col-lg-4"
               key={id}
-              onClick={() => navigate(`/instructors/${id}`)}
-              style={{ cursor: "pointer" }}
+              // onClick={() => navigate(`/instructors/${id}`)}
+              //! Relative path
+              onClick={() => navigate(`${id}`, { state: inst })}
+              //? Absolute path
+              // onClick={() => navigate(`/instructors/${id}`, { state: inst })}
+              style={{ cursor: 'pointer' }}
             >
               <img
                 src={`https://avatars.dicebear.com/v2/avataaars/${id}.svg`}
                 alt=""
               />
               <h6>{name}</h6>
-              
             </div>
           );
         })}
