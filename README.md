@@ -24,4 +24,4 @@ step 4: open localhost with yarn start command..
 
 
 
-![Random User App](https://github.com/IRONSTONE-A/blog-fire-react-app/blob/master/react-blog-app.gif)
+![Random User App](https://github.com/IRONSTONE-A/react-router-project/blob/master/react-router-app.gif)
