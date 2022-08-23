@@ -10,7 +10,7 @@
   - <b>Props</b>
   - React <b>Developer Tool</b>
   - Destructuring props
-  - array <b>map</b> method
+  - array <b>map</b> method.
 
 #To open your own local by downloading the codes;
 
